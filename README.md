@@ -6,6 +6,9 @@ disqus: hackmd
 > Abdulsalam Aldahir (aa225jy)
 Estimated time: 2 hours
  
+
+![](https://i.imgur.com/KPZZ61f.jpg)
+
 This project is about how to control a floor fan using lopy4 with a dht11 sensor. With dh11 we can measure the tempture and the humadity This will be used to dermine if the fan need to be turned on or off. The fan can be also controlled by google home if you want.
 ### Objective
 
@@ -110,8 +113,20 @@ For this you will need to have the IFTTT app installed on your phone with the sa
 After that you will have 3 web request ready to use in the code.
 
 ### The code
-Import your code here, and don’t forget to explain what you have done!
+Now what is left is to put everything together in code. Please download all the code from my [github](https://github.com/zerox13/SmartFan). All you need to do is just to replace the key of the links in the webhooks file with your unique key, or just replace the whole links.
+```python=
+import urequests
 
+class webhooks:
+    onUrl="https://maker.ifttt.com/trigger/turn_on/with/key/YOURKEY"
+    offUrl="https://maker.ifttt.com/trigger/turn_off/with/key/YOURKEY"
+    notifUrl="https://maker.ifttt.com/trigger/tempRH/with/key/YOURKEY"
+    ....
+```
+
+After this you should be able to run the code and everything should work!
+
+below is the main function that run everything. If you wish to change something (e.x the limit to turn of or on) it is this file you need to edit. 
 
 ```python=
 import time
@@ -154,8 +169,7 @@ def send_env_data():
 _thread.start_new_thread(send_env_data, ())
 
 ```
-[Main code](https://github.com/zerox13/SmartFan)
-[urequests](https://github.com/jotathebest/micropython-lib/blob/master/urequests/urequests.py)
+Please note that the urequests file is not written by me, and here is the source of it. [here](https://github.com/jotathebest/micropython-lib/blob/master/urequests/urequests.py)
 ### Transmitting the data / connectivity
 
 The data is trnasmitted via Wifi. It is maybe smart to use LoRa if there is a gateawy near you. LoRa needs less power and have a much bigger range than Wifi. In our case we are not transmitting big chunks of data, which is a great for useing LoRa. However this toutrial will only use Wifi because i think it does not make that big diffrence and i actully have no gateway near me.
@@ -178,7 +192,16 @@ The data also is sent to the phone, below is a screen show how the notification 
 
 
 ### Finalizing the design
-Show the final results of your project. Give your final thoughts on how you think the project went. What could have been done in an other way, or even better? Pictures are nice!
-- [ ] Show final results of the project
-- [ ] Pictures
-- [ ] *Video presentation
+
+Below is how the my setup looks like i reality.
+
+![](https://i.imgur.com/7O4oeSs.jpg)
+
+I still dont have a case for the device yet, so i put it in an old raspberry pi case xD. 
+
+This project was really fun for me. Now my fan is kind of thinking, hehehe.
+
+You can absoulty be creative and change the fan with something else you want to automate, the fan was just an exemple.
+
+I hope you enjoyed and learned something!
+
