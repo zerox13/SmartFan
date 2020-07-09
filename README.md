@@ -1,2 +1,2 @@
 # SmartFan
-An IoT project about automating a fan using lopy4 with DH11 sensor 
+IoT project about automating a fan useing the Lopy4 with DHT11 sensor
