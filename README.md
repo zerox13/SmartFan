@@ -193,7 +193,7 @@ The data also is sent to the phone, below is a screen show how the notification 
 
 ### Finalizing the design
 
-Below is how the my setup looks like i reality.
+Below is how my setup looks like i reality.
 
 ![](https://i.imgur.com/7O4oeSs.jpg)
 
