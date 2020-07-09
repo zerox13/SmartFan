@@ -1,11 +1,8 @@
-# SmartFan
-IoT project about automating a fan useing the Lopy4 with DHT11 sensor
 
 ---
 title: 'Automating a floor fan with DHT11 sensor'
 disqus: hackmd
 ---
-## Tutorial on how to Automate a floor fan with DHT11 sensor.
 > Abdulsalam Aldahir (aa225jy)
 Estimated time: 2 hours
  
