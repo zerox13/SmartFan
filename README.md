@@ -63,7 +63,10 @@ So lets put everything together. As showen below, the dht11 sensor will measure 
 ![](https://i.imgur.com/iXc2EIw.png)
 
 
-So you need to plug the fan to smart plug. And to connect the dh11 sensor to lopy4 follow the below picture.
+So you need to plug the fan to smart plug. And to connect the dh11 sensor to lopy4, 
+
+connect 3v3 -> the middle pin, G9 -> +, GND -> -
+or just follow the below picture.
 
 ![](https://i.imgur.com/eWnD0iL.png)
 
