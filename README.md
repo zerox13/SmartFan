@@ -103,7 +103,7 @@ Now we click on the **+** beside *That* and search for *mydlink* You will need t
 
 Now we choose *turn on plug*  --> choose the device --> finsh 
 
-And now we are done, all we need is to get a the link request that turns on the fan. So we go to the [Documentation](https://maker.ifttt.com/use/p5leuMpGRoYmQPxcgtjD-9Tg8QfnPeX8Mce1Et2H2su) of Webhooks where you find the link with your key and test it. Put the the name we gave to the request and Click test. This should turn on the fan if the plug is connected. 
+And now we are done, all we need is to get a the link request that turns on the fan. So we go to the [Documentation](https://maker.ifttt.com) of Webhooks where you find the link with your key and test it. Put the the name we gave to the request and Click test. This should turn on the fan if the plug is connected. 
 
 Now we will need to do this again, but this time to turn off.
 
